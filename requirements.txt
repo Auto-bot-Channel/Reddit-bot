@@ -1,0 +1,10 @@
+gunicorn==20.0.4
+Flask==1.1.2
+Flask-RESTful==0.3.8
+Click==7.0
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.15.6
+praw==7.1.0
+prawcore==1.5.0

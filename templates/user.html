@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>Auto-bot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<link type="text/css" rel="stylesheet" href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css">
+<script src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js" type="text/javascript"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://cdn.wallpapersafari.com/53/52/BwfFGS.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:20%">
+  <div class="bgimg"></div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:20%">
+
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:16px 16px" id="home">
+    <h1 class="w3-jumbo"><b><a href="https://www.youtube.com/channel/UCwNJ7sohzMH4DvXHRE1aANg?sub_confirmation=1" target="_blank" class="w3-hover-text-green">Auto-Bot Channel</a></b></h1>
+    <h3>Submit your video link bellow to share it over 25+ subreddit in single click!</h3>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="container" style="padding-left:10%;padding-right:10%;">
+    <h2>{{title}}</h2>
+    <div class="embed-responsive embed-responsive-25by10" style="height:400px; width: 60%%">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{hashcode}}"></iframe>
+    </div>
+  </div>
+
+  <div class="container">
+  <h2>Video will be posted in following subreddits</h2>
+  <p>
+  {% for x in subs %}
+    <b> <span style="display:inline-block; width:3px;"></span> <a href="https://www.reddit.com/r/{{x}}/new/">{{x}}</a> <span style="display:inline-block; width: 3px;"></span> </b>
+  {% endfor %}
+  </p>
+  <p style="margin-bottom:1cm;"> Wait for a min and click on link to check yourself!! </p>
+</div>
+  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.youtube.com/channel/UCwNJ7sohzMH4DvXHRE1aANg?sub_confirmation=1" target="_blank" class="w3-hover-text-green">Auto-Bot Channel</a></p>
+
+
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
