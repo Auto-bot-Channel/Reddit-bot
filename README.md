@@ -4,7 +4,7 @@ one click to share your vidoe over 25+ subreddits, Free Reddit bot for everyone!
 Just [click here](https://auto-bot-reddit.herokuapp.com/) to get to website :smiley:
 
 **Watch on youtube!!**
-[![Video link](thump.jpg)](https://www.youtube.com/watch?v=3NVL4vkty-I)
+[![Video link](thump.jpg)](https://www.youtube.com/watch?v=uOj_ihQYc-g)
 
 
 ## MIT License
